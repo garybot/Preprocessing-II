@@ -1,6 +1,10 @@
 .home {
+  width: 80%;
   header {
     border-bottom: 2px dashed @navigation-border;
+    h2 {
+      margin-top: 20px;
+    }
 
   }
 
@@ -9,8 +13,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
@@ -63,6 +65,6 @@
     }
   }
   .btn {
-    .button(@button-bg, 20px, 10px);
+    .button(@button-bg, @white, 10px);
   }
 }// home

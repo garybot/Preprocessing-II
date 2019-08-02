@@ -1,11 +1,12 @@
 // Mixins in here
-.button(@color, @padding, @radius) {
-	background: darken(@color, 10%);
-	color: @white;
+.button(@bgcolor, @textcolor, @radius) {
+	/*background: darken(@color, 10%);*/
+	background: @bgcolor;
+	color: @textcolor;
+	padding: 10px 0;
 	font-size: 1.4rem;
 	text-align: center;
 	font-weight: bold;
-	padding: @padding/2 0;
 	border-radius: @radius;
 
 
