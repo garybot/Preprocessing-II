@@ -185,6 +185,17 @@ img {
   color: #212529;
   font-size: 1.4rem;
 }
+@media (max-width: 500px) {
+  #navdiv {
+    flex-flow: column;
+    padding: 10px;
+  }
+  #navdiv h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5px auto;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -222,6 +233,17 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-flow: column nowrap;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -234,12 +256,22 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-flow: column-reverse nowrap;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -251,6 +283,15 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 10px auto 30px;
+  }
+}
 .home .btn {
   /*background: darken(@color, 10%);*/
   background: #17A2B8;
@@ -260,4 +301,7 @@ img {
   text-align: center;
   font-weight: bold;
   border-radius: 10px;
+}
+.home .btn:hover {
+  background: #0c525d;
 }
